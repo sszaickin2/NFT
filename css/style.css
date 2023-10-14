@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap);
 
-@charset "UTF-8";
-
 @font-face {
   font-family: GTWalsheimPro;
   font-display: swap;
@@ -155,7 +153,6 @@ body {
   min-width: 0;
 }
 
-
 [class*=__container] {
   max-width: 80rem;
   -webkit-box-sizing: content-box;
@@ -240,8 +237,9 @@ body::after {
 }
 
 .popup__content {
-  overflow: hidden;
   position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
   visibility: hidden;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
