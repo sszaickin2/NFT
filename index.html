@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231014184715">
+	<link rel="shortcut icon" href="favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="logo" /></a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav id="menu" class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="#" data-goto=".info" class="menu__link">Что даст обучение</a></li>
+							<li class="menu__item"><button class="menu__authorization">Личный кабинет</button></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="main">
+				<div class="main__container">
+					<div class="main__content">
+						<div class="main__info">
+							<h1 class="main__title">Не упусти возможность войти в <span>прибыльную нишу</span></h1>
+							<p class="main__text">Получи все нужные навыки для заработка на NFT всего за 28 дней!</p>
+							<button data-popup="#popup" type="button" class="main__button">Начать зарабатывать на NFT</button>
+						</div>
+						<div data-da=".main__info, 767, 1" class="main__image">
+							<div class="main__block">
+								<div class="main__min-block">
+									<picture><source srcset="img/main/people.webp" type="image/webp"><img class="main__img" src="img/main/people.png" alt="people" /></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="info">
+				<div class="info__container">
+					<div class="info__content">
+						<h2 class="info__title">Что даст тебе обучение?</h2>
+						<div class="info__list">
+							<div class="info__item">
+								<picture><source srcset="img/info/smile-1.webp" type="image/webp"><img src="img/info/smile-1.png" alt="images" class="info__images" /></picture>
+								<p class="info__text">Откроешь свой первый криптокошелек и научишься с ним работать</p>
+							</div>
+							<div class="info__item">
+								<picture><source srcset="img/info/smile-2.webp" type="image/webp"><img src="img/info/smile-2.png" alt="images" class="info__images" /></picture>
+								<p class="info__text">Поймёшь, как выбирать правильные дропы</p>
+							</div>
+							<div data-da=".info__list, 679, 1" class="info__item">
+								<picture><source srcset="img/info/smile-3.webp" type="image/webp"><img src="img/info/smile-3.png" alt="images" class="info__images" /></picture>
+								<p class="info__text">Построишь план по быстрому приумножению заработанных средств</p>
+							</div>
+							<div data-da=".info__list, 679, 1" class="info__item">
+								<picture><source srcset="img/info/smile-4.webp" type="image/webp"><img src="img/info/smile-4.png" alt="images" class="info__images" /></picture>
+								<p class="info__text">Узнаешь кто такие холдеры и флипперы</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__list">
+					<h2 class="popup__title">Начни прямо сейчас!</h2>
+					<p class="popup__text">Получи все нужные навыки для заработка на NFT всего за 28 дней!</p>
+
+					<form class="popup__form">
+						<input type="text" name="form[email]" placeholder="Ваш email" class="popup__input" />
+						<button type="submit" class="popup__button">Оплатить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20231014184715"></script>
+</body>
+
+</html>
